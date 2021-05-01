@@ -21,15 +21,7 @@ dataUpload <- function() {
              style="color: #fff; background-color: #337ab7; border-color: #2e6da4"),
            uiOutput("uploadErrorMsg")
          ),
-         column(6,
-           h3("Or try these example datasets:", align="left"),
-           fluidRow(column(6, customDownloadButton("heartFailure", label = "Heart Failure", icon = icon("heart"))),
-             column(6, customDownloadButton("covid19", label = "COVID-19", icon = icon("chart-line")))),
-           fluidRow(column(6, "read paper: ", a("CJC 2019", href="https://www.ncbi.nlm.nih.gov/pubmed/30935638")),
-             column(6, "read paper: ", a("bioRxiv", href="https://www.biorxiv.org/content/10.1101/2020.03.24.004655v1"))),
-           fluidRow(column(6, a("watch demo", href="https://www.youtube.com/watch?v=u1zLL4uXZi8")),
-             column(6, a("watch demo", href="https://www.youtube.com/watch?v=oglZDscpbAU"))))
-       ),
+         
     fluidRow(
       column(12,
         h2("Voice-enabled analytics"),
